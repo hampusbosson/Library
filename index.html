@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text">Library</div>
+            <div class="btn-header">
+                <button type="button" class="login-button" id="button">Log In</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="form">
+                <form>
+                    <div class="inputs">
+                        <ul>
+                            <li>
+                                <label for="book">Book</label>
+                                <input type="text" id="book" name="book_name">
+                            </li>
+                            <li>
+                                <label for="author">Author</label>
+                                <input type="text" id="author" name="author_name">
+                            </li>
+                            <li>
+                                <label for="status">Status</label>
+                                <select name="status" id="status">
+                                    <option value="read">Read</option>
+                                    <option value="not_read">Not Read</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" class="submit-button" id="submit-button">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <div class="book-box">
+                <div class="book-list">
+                    <div class="description">
+                        <div class="description-text">
+                            <div>Name</div>
+                            <div>Author</div>
+                            <div>Status</div>
+                        </div>
+                    </div>
+                    <div class="added-books">
+                        <div class="added-books-text">
+                            <div>xxxx</div>
+                            <div>xxxx</div>
+                            <button type="button" id="read-btn">READ</button>
+                            <button type="button" id="del-btn">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
