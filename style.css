@@ -1,18 +1,20 @@
 body {
     margin: 0; 
     padding: 0;
-    max-height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    background-color: rgb(233, 240, 248);
+
 }
 
 .container {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 783px;
 }
 
 .header {
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,7 +42,6 @@ body {
     font-family: 'Roboto', sans-serif;
     padding-top: 65px;
     gap: 60px; 
-    background-color: rgb(233, 240, 248);
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -98,7 +99,13 @@ select {
     align-items: center;
 }
 
+
 .added-books {
+    display: none;
+    background-color: white;
+}
+
+.added-books-text {
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(137, 137, 137);
@@ -110,25 +117,27 @@ select {
     flex-direction: column;
 }
 
-#read-btn, #del-btn {
+
+.read-button {
+    background-color: white;
+    width: 95px;
     height: 38px;
     border-radius: 5px;
     border: 1px solid lightgray; 
 }
 
-#del-btn {
+
+.delete-button {
     width: 105px;
     background-color: rgb(228, 26, 103);
     margin-left: 170px;
     color: white;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid lightgray; 
 }
 
-#read-btn {
-    background-color: white;
-    width: 95px;
-}
-
-.submit-button:hover, #del-btn:hover, #read-btn:hover {
+.submit-button:hover, .delete-button:hover, .read-button:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
